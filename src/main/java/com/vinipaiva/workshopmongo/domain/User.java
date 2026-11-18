@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Document(collation = "user")
+@Document(collection = "user")
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -36,7 +36,7 @@ public class User implements Serializable {
         return nome;
     }
 
-    public void setNome(String Nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
