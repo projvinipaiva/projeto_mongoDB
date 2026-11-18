@@ -12,15 +12,15 @@ public class User implements Serializable {
 
     @Id
     private String id;
-    private String senha;
+    private String nome;
     private String email;
 
     public User(){
     }
 
-    public User(String id, String senha, String email) {
+    public User(String id, String nome, String email) {
         this.id = id;
-        this.senha = senha;
+        this.nome = nome;
         this.email = email;
     }
 
@@ -32,12 +32,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getNome() {
+        return nome;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setNome(String Nome) {
+        this.nome = nome;
     }
 
     public String getEmail() {
